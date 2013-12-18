@@ -18,6 +18,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero-unit {
+  background-color: rgba(209,222,237,0.7);
+}
+
 section {
   overflow: auto;
 }
@@ -40,25 +44,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  color: $red;
+}
+
+#home_header {
+  padding-bottom: 30px;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $red;
 }
 
 p {
-  font-size: 0.8em;
-  line-height: 1.4em;
+  font-size: 1.0em;
+  font-style: italic;
+  line-height: 1.2em;
   color: $j_blue;
 }
 
@@ -86,12 +93,13 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: $lightGray;
+  border-top: 1px solid $blue;
+  color: #000;
   a {
     color: #555;
     &:hover {
-      color: #222;
+      color: $green;
+      text-decoration: none;
     }
   }
   small {
