@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 $lightGray: #999;
-
+$j_blue: #216BBF;
 
 /* universal */
 
@@ -12,7 +12,9 @@ html {
 body {
   padding-top: 60px;
   background: url('snow-flakes.jpg');
-  background-size: 100%;
+  /*background-size: 100%;*/
+  background-size: cover;
+  /* contain*/
   background-repeat: no-repeat;
 }
 
@@ -55,8 +57,9 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: $j_blue;
 }
 
 /* header */
