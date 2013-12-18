@@ -1,10 +1,10 @@
 UpYourSleeve::Application.routes.draw do
 
-get "pages/home"
-get "pages/about"
-get "pages/wewiki"
-
-
+root  'pages#home'
+match '/about',   to: 'pages#about',   via: 'get'
+match '/wewiki',    to: 'pages#wewiki',    via: 'get'
+match '/contact', to: 'pages#contact', via: 'get'
+  
   # # You can have the root of your site routed with "root"
   # root 'pages#home'
   

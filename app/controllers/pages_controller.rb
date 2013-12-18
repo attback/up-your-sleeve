@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def wewiki
   end
+
+  def contact
+  end
+  
 end
