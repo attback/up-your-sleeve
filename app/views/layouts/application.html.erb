@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Up Your Sleeve | <%= yield(:title) %> </title>
-	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-	  <%= csrf_meta_tags %>
+		<title> <%= full_title(yield(:title)) %> </title>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+
+	  	<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+
 	</head>
 
 	<body>
@@ -13,6 +18,7 @@
 		    <div class="navbar-inner">
 		        <div class="container">
 		        	<%= link_to "up your sleeve", '#', id: "logo" %>
+
 		          	<nav>
 			            <ul class="nav pull-right">
 			            	<li><%= link_to "Home", '#' %></li>
@@ -20,6 +26,7 @@
 			             	<li><%= link_to "WeWiki", '#' %></li>
 			            </ul>
 		          	</nav>
+
 		        </div>
 		      </div>
 	    </header>
