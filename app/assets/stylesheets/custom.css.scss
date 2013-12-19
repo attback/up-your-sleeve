@@ -11,8 +11,7 @@ html {
 
 body {
   padding-top: 60px;
-  background: url('/assets/snow-flakes.jpg');
-  /*background-size: 100%;*/
+  background-image: url('/assets/snow-flakes.jpg');
   background-size: cover;
   /* contain*/
   background-repeat: no-repeat;
