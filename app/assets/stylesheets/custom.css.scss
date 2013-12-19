@@ -12,9 +12,8 @@ html {
 body {
   padding-top: 60px;
   background-image: image-url('snow-flakes.jpg');
-  /* background-size: cover;*/
-  /* contain*/
-  /* background-repeat: no-repeat;*/
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-unit {
@@ -54,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.4em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -73,6 +72,10 @@ a {
 }
 
 /* header */
+
+header {
+  font-size: 1.5em;
+}
 
 #logo {
   float: left;
@@ -94,6 +97,7 @@ a {
 /* footer */
 
 footer {
+  font-size: 1.5em;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $blue;
