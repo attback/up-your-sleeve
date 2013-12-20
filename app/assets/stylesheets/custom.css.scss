@@ -1,7 +1,7 @@
 @import "bootstrap";
 
-$lightGray: #999;
-$j_blue: #216BBF;
+$darkBlue: #193485;
+$lightBlue: #B5DEFF;
 
 /* universal */
 
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 100px;
   background-image: image-url('snow-flakes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ textarea {
 .center {
   text-align: center;
   h1 {
-  	margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -61,19 +60,28 @@ h2 {
 }
 
 p {
-  font-size: 1.4em;
-  line-height: 1.2em;
-  color: $j_blue;
+  font-size: 1.6em;
+  /*line-height: 1.2em;*/
+  color: $darkBlue;
+  a {
+    color: $green;
+  }
 }
 
-a {
-  color: $green;
+#projectlist {
+    color: $darkBlue;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 1.4em;
 }
 
 /* header */
 
 header {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  ul {
+    padding-top: 12px;
+  }
 }
 
 #logo {
@@ -83,11 +91,11 @@ header {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 10px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.5;
   &:hover {
-    color: #fff;
+    color: $lightBlue;
     text-decoration: none;
   }
 
@@ -96,26 +104,17 @@ header {
 /* footer */
 
 footer {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid $blue;
-  color: #000;
-  a {
-    color: #555;
-    &:hover {
-      color: $green;
-      text-decoration: none;
-    }
-  }
+  padding-top: 7px;
+  padding-bottom: 10px;
+  border-top: 1px solid $darkBlue;
   small {
     float: left;
   }
   ul {
     float: right;
     list-style: none;
-    color: #000;
-    font-weight: bold;
     li {
       float: left;
       margin-left: 10px;

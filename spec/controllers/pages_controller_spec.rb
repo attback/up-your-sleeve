@@ -16,9 +16,9 @@ describe PagesController do
     end
   end
 
-  describe "GET 'wewiki'" do
+  describe "GET 'projects'" do
     it "returns http success" do
-      get 'wewiki'
+      get 'projects'
       response.should be_success
     end
   end
